@@ -1,0 +1,41 @@
+/* 品牌名稱樣式調整 */
+.navbar-brand h1 { 
+    color: #007bff; 
+    font-size: 1.8em; 
+    margin-top: 5px; 
+    margin-bottom: 0;
+    line-height: .75; 
+}
+
+/* 內容區塊樣式：確保有背景和足夠的高度 */
+.content-box {
+    background-color: #d1e7dd; /* 內容區塊的背景色 */
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 30px; 
+    min-height: 1200px; /* 強制滾動的最小高度 */
+    overflow: hidden; /* 保持區塊邊界清晰 */
+}
+
+/* 行動裝置下拉選單樣式 (max-width: 767px 是 Bootstrap 的手機斷點) */
+@media (max-width: 767px) { 
+    /* 確保下拉選單有背景色 */
+    #collapsable-nav {
+        background-color: #f7f7f7; 
+        border: 0;
+    }
+    
+    /* 為每個菜單項目設置分隔線 */
+    #collapsable-nav li {
+        border-bottom: 1px solid #c8c8c8; 
+    }
+    
+    #collapsable-nav li:last-child {
+        border-bottom: 0; 
+    }
+    
+    /* 確保菜單項目文字置中 */
+    #collapsable-nav .text-center {
+        text-align: center;
+    }
+}
